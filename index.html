@@ -1,372 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Happy Birthday Mumma ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>I'm Sorry, Favourite Person 💗</title>
 
 <style>
-body{
-margin:0;
-overflow:hidden;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#ffd6e7,#fff5f8);
-text-align:center;
+* {
+    box-sizing: border-box;
 }
 
-.container{
-padding-top:60px;
-position:relative;
-z-index:10;
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #ffe1ec, #fff5f8, #ffd6e5);
+    color: #63384b;
 }
 
-h1{
-color:#ff4081;
-font-size:50px;
+.card {
+    width: 100%;
+    max-width: 600px;
+    padding: 35px 25px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ffc5d8;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(220, 90, 140, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
-p{
-font-size:22px;
-color:#555;
-padding:0 20px;
+.heart {
+    font-size: 35px;
+    animation: beat 1s infinite;
 }
 
-button{
-background:#ff4081;
-color:white;
-border:none;
-padding:15px 30px;
-font-size:20px;
-border-radius:30px;
-cursor:pointer;
-margin-top:20px;
-box-shadow:0 4px 15px rgba(255,64,129,0.3);
+@keyframes beat {
+    50% {
+        transform: scale(1.15);
+    }
 }
 
-button:hover{
-transform:scale(1.05);
+h1 {
+    color: #e75480;
+    font-size: 35px;
+    margin: 15px 0;
 }
 
-.heart,.confetti{
-position:fixed;
-pointer-events:none;
-z-index:1;
+.subtitle {
+    color: #d94f80;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.heart{
-bottom:-50px;
-font-size:28px;
-animation:float linear infinite;
+.message {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 25px 0;
 }
 
-.confetti{
-top:-50px;
-font-size:24px;
-animation:fall linear infinite;
+button {
+    padding: 13px 22px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 30px;
+    background: #ff78a5;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #d94d7c;
+    transition: 0.2s;
 }
 
-@keyframes float{
-from{
-transform:translateY(0);
-opacity:1;
-}
-to{
-transform:translateY(-110vh);
-opacity:0;
-}
+button:hover {
+    transform: translateY(-3px);
 }
 
-@keyframes fall{
-from{
-transform:translateY(-50px);
-}
-to{
-transform:translateY(110vh);
-}
+.secondary {
+    background: #ffe0eb;
+    color: #b83d6b;
+    box-shadow: 0 5px 0 #efb4c9;
 }
 
-#letter{
-display:none;
-max-width:700px;
-margin:30px auto;
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 0 20px rgba(0,0,0,0.1);
-animation:fadeIn 1s;
+#counter {
+    font-size: 18px;
+    color: #d94f80;
+    font-weight: bold;
 }
 
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:scale(0.8);
+#reply {
+    margin-top: 22px;
+    min-height: 55px;
+    line-height: 1.7;
+    font-weight: bold;
+    color: #c33e72;
 }
-to{
-opacity:1;
-transform:scale(1);
+
+.footer {
+    font-size: 13px;
+    color: #a66a83;
+    margin-top: 25px;
 }
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 22px;
+    pointer-events: none;
+    animation: floatUp 5s linear forwards;
+    z-index: 5;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<h1>🎂 Happy Birthday Mumma 🎂</h1>
+    <div class="heart">💗 🥺 💗</div>
 
-<p>
-💖 Dear Mumma 💖<br><br>
+    <p class="subtitle">A LITTLE APOLOGY FROM MY HEART</p>
 
-Aaj ka din bahut special hai,<br>
-kyunki aaj meri duniya ki sabse pyari Mumma ka birthday hai 🥹🌹<br><br>
+    <h1>I'm Really Sorry! 🤧</h1>
 
-Thank you for everything Ammi ❤️<br>
-Aapne mere liye jo kuch kiya hai uska shukriya lafzon me bayan nahi kar sakti 💕<br><br>
+    <p class="message">
+        <b>Dear Favourite Person, 💌</b>
+        <br><br>
 
-I Love You So Much Mumma 💞
-</p>
+        Mujhse galti ho gayi. 😭
+        <br>
+        Main aapko hurt nahi karna chahti thi.
+        <br>
+        Meri galti thi, mujhe ye nahi karna chahiye tha.
+        <br>
+        Please mujhe maaf kar do, meri jaan. 🤧😭🙏🏻
+        <br><br>
 
-<button onclick="openGift()">🎁 Open Your Surprise Gift</button>
+        Aap mere liye bahut special ho. 💗
+        Main dil se sorry bol rahi hoon.
+        <br>
+        I never wanted to hurt you. 🥺
+        <br><br>
 
-<div id="letter">
+        <b>Please forgive me? 🥹🎀</b>
+    </p>
 
-<h2>💌 A Letter For Mumma 💌</h2>
+    <div id="counter">Sorry Counter: 0 / 100 💗</div>
 
-<p>
-My Dearest Mumma ❤️<br><br>
+    <button onclick="saySorry()">
+        Ek Sorry Aur 🥺
+    </button>
 
-Thank you for this beautiful surprise 🥹💖<br><br>
+    <button class="secondary" onclick="forgive()">
+        Maaf Kiya 💗
+    </button>
 
-Meri pyari badi beti Al Haadi,<br>
-tumhara yeh pyaar aur yeh surprise mere liye duniya ka sabse khoobsurat gift hai 🌹✨<br><br>
+    <div id="reply" aria-live="polite">
+        Please naraz mat raho na. 🤧💗
+    </div>
 
-Main tum par bahut fakhr karti hoon ❤️<br>
-Allah tumhe hamesha khush rakhe, kamyab kare aur tumhare har sapne poore kare 🤲💞<br><br>
-
-Lots of Love,<br>
-💖 Mumma 💖
-</p>
-
-</div>
-
-</div>
-
-<script>
-
-function openGift(){
-document.getElementById("letter").style.display="block";
-}
-
-const hearts=["💖","❤️","💕","💞","🌸","✨"];
-
-for(let i=0;i<50;i++){
-let h=document.createElement("div");
-h.className="heart";
-h.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];
-h.style.left=Math.random()*100+"vw";
-h.style.animationDuration=(Math.random()*5+5)+"s";
-h.style.animationDelay=(Math.random()*5)+"s";
-document.body.appendChild(h);
-}
-
-const confetti=["🎊","🎉","✨","🎀","🌸"];
-
-for(let i=0;i<50;i++){
-let c=document.createElement("div");
-c.className="confetti";
-c.innerHTML=confetti[Math.floor(Math.random()*confetti.length)];
-c.style.left=Math.random()*100+"vw";
-c.style.animationDuration=(Math.random()*4+3)+"s";
-c.style.animationDelay=(Math.random()*5)+"s";
-document.body.appendChild(c);
-}
-
-</script>
-
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Happy Birthday Mumma ❤️</title>
-
-<style>
-body{
-margin:0;
-overflow:hidden;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#ffd6e7,#fff5f8);
-text-align:center;
-}
-
-.container{
-padding-top:60px;
-position:relative;
-z-index:10;
-}
-
-h1{
-color:#ff4081;
-font-size:50px;
-}
-
-p{
-font-size:22px;
-color:#555;
-padding:0 20px;
-}
-
-button{
-background:#ff4081;
-color:white;
-border:none;
-padding:15px 30px;
-font-size:20px;
-border-radius:30px;
-cursor:pointer;
-margin-top:20px;
-box-shadow:0 4px 15px rgba(255,64,129,0.3);
-}
-
-button:hover{
-transform:scale(1.05);
-}
-
-.heart,.confetti{
-position:fixed;
-pointer-events:none;
-z-index:1;
-}
-
-.heart{
-bottom:-50px;
-font-size:28px;
-animation:float linear infinite;
-}
-
-.confetti{
-top:-50px;
-font-size:24px;
-animation:fall linear infinite;
-}
-
-@keyframes float{
-from{
-transform:translateY(0);
-opacity:1;
-}
-to{
-transform:translateY(-110vh);
-opacity:0;
-}
-}
-
-@keyframes fall{
-from{
-transform:translateY(-50px);
-}
-to{
-transform:translateY(110vh);
-}
-}
-
-#letter{
-display:none;
-max-width:700px;
-margin:30px auto;
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 0 20px rgba(0,0,0,0.1);
-animation:fadeIn 1s;
-}
-
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:scale(0.8);
-}
-to{
-opacity:1;
-transform:scale(1);
-}
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h1>🎂 Happy Birthday Mumma 🎂</h1>
-
-<p>
-💖 Dear Mumma 💖<br><br>
-
-Aaj ka din bahut special hai,<br>
-kyunki aaj meri duniya ki sabse pyari Mumma ka birthday hai 🥹🌹<br><br>
-
-Thank you for everything Ammi ❤️<br>
-Aapne mere liye jo kuch kiya hai uska shukriya lafzon me bayan nahi kar sakti 💕<br><br>
-
-I Love You So Much Mumma 💞
-</p>
-
-<button onclick="openGift()">🎁 Open Your Surprise Gift</button>
-
-<div id="letter">
-
-<h2>💌 A Letter For Mumma 💌</h2>
-
-<p>
-My Dearest Mumma ❤️<br><br>
-
-Thank you for this beautiful surprise 🥹💖<br><br>
-
-Meri pyari badi beti Al Haadi,<br>
-tumhara yeh pyaar aur yeh surprise mere liye duniya ka sabse khoobsurat gift hai 🌹✨<br><br>
-
-Main tum par bahut fakhr karti hoon ❤️<br>
-Allah tumhe hamesha khush rakhe, kamyab kare aur tumhare har sapne poore kare 🤲💞<br><br>
-
-Lots of Love,<br>
-💖 Mumma 💖
-</p>
-
-</div>
+    <div class="footer">
+        Made with lots of love, care & a little guilt. 🎀
+        <br>
+        You are someone I never wanted to hurt. 💌
+    </div>
 
 </div>
 
 <script>
+let count = 0;
 
-function openGift(){
-document.getElementById("letter").style.display="block";
+const messages = [
+    "Sorry meri jaan. 🤧💗",
+    "Please maan jao na. 🥺",
+    "Meri galti thi, I'm sorry. 😭",
+    "Aap mere favourite person ho. 💌",
+    "Ek tight virtual hug aur ek sorry. 🫂💗",
+    "Please mujhe maaf kar do. 🙏🏻🥹",
+    "Dil se sorry, favourite person. 💗"
+];
+
+function saySorry() {
+
+    if (count < 100) {
+        count++;
+    }
+
+    document.getElementById("counter").innerText =
+        "Sorry Counter: " + count + " / 100 💗";
+
+    if (count === 100) {
+        document.getElementById("reply").innerText =
+            "100 TIMES SORRY! 😭💗 Ab please meri baat sun lo. 🥹";
+    } else {
+        document.getElementById("reply").innerText =
+            messages[(count - 1) % messages.length];
+    }
+
+    createHearts();
 }
 
-const hearts=["💖","❤️","💕","💞","🌸","✨"];
+function forgive() {
 
-for(let i=0;i<50;i++){
-let h=document.createElement("div");
-h.className="heart";
-h.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];
-h.style.left=Math.random()*100+"vw";
-h.style.animationDuration=(Math.random()*5+5)+"s";
-h.style.animationDelay=(Math.random()*5)+"s";
-document.body.appendChild(h);
+    document.getElementById("reply").innerText =
+        "Thank you for hearing me out. 🥹💗 " +
+        "Main dil se sorry hoon. Aapke feelings mere liye important hain. 🎀";
+
+    createHearts();
 }
 
-const confetti=["🎊","🎉","✨","🎀","🌸"];
+function createHearts() {
 
-for(let i=0;i<50;i++){
-let c=document.createElement("div");
-c.className="confetti";
-c.innerHTML=confetti[Math.floor(Math.random()*confetti.length)];
-c.style.left=Math.random()*100+"vw";
-c.style.animationDuration=(Math.random()*4+3)+"s";
-c.style.animationDelay=(Math.random()*5)+"s";
-document.body.appendChild(c);
+    for (let i = 0; i < 7; i++) {
+
+        const heart = document.createElement("div");
+
+        heart.className = "floating-heart";
+
+        const emojis = ["💗", "💕", "💖", "🎀", "🥹", "💌"];
+
+        heart.innerText =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+
+        heart.style.animationDuration =
+            (3 + Math.random() * 3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
 }
-
 </script>
 
 </body>
